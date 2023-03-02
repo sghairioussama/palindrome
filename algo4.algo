@@ -1,0 +1,35 @@
+ALGORITHM procedure is_palindrome
+
+
+VAR
+
+    s: string;
+  i, j: integer;
+
+BEGIN
+
+ i := 1;
+ j := length(s);
+
+  FOR i := 1 to length(s) do
+  
+    IF s[i] <> s[j] then
+
+      write(s, ' is not a palindrome');
+
+       exit;
+
+  ELSE
+    
+    j := j - 1;
+  
+
+  write(s, ' is a palindrome');
+  END IF
+  END FOR
+END
+
+
+
+
+
